@@ -1,20 +1,35 @@
-# Product Sales Data Analytics
+# Superstore Sales Dashboard & 15-Day Forecast
 
-## **PROJECT OBJECTIVE:** 
+Power BI project analyzing retail sales performance and forecasting short-term demand for a superstore chain.
 
-To contribute to the success of a business by utilizing data analysis techniques, specifically focusing on time series analysis, to provide valuable insights and accurate sales forecasting.
+## Objective
+Turn raw order-level retail data into a decision-ready dashboard: identify which regions, categories, and channels drive revenue and profit, and forecast near-term sales volume to support inventory and staffing decisions.
 
-##	**<u>DESCRIPTION:</u>**
+## Tools
+Power BI (data modeling, DAX, time-series forecasting)
 
-i)	Dashboard Creation: Identify the KPIs, design an intuitive and visually
-appealing dashboard, add interactive visualizations and filtering capabilities to
-allow users to explore the data at various levels of granularity.
+## What's in the dashboard
 
-ii)	Data Analysis: Provide valuable insights to business entities regarding the
-effectiveness of their sales strategies through visualization and charts.
+**Overview page**
+- Headline KPIs: 22K orders, $1.6M sales, $175K profit, 4 avg. ship days
+- Sales by Region (donut): West 33%, East 29%, Central 22%, South 16%
+- Sales by Payment Mode: COD 43%, Online 35%, Cards 22%
+- Sales by Segment: Consumer 48%, Corporate 33%, Home Office 19%
+- Sales & Profit by Month, filterable by year (2019 vs 2020)
+- Sales by Ship Mode: Standard Class ($0.33M) far ahead of Second Class, First Class, and Same Day
+- Sales by Category/Sub-Category: Technology, Furniture, and Office Supplies roughly even at the category level; Phones, Chairs, and Binders lead sub-categories
+- Profit and Sales by State, plotted on a map (California, New York, and Texas are the top three states by sales)
 
-## __LEARNING__
-Incorporated data analysis techniques, specializing in time series analysis, to deliver valuable insights, accurate sales forecasting, and interactive dashboard creation, driving business success.
+**Forecast page**
+- Daily total sales volume plotted from Jan 2019 to Jan 2021 to expose seasonality and spikes
+- A 15-day forward forecast with confidence interval band, projecting a range that peaked near 10.6K and settled around 3.0K by the forecast horizon
+- Sales-by-category breakdown reused alongside the forecast for context
 
-![Data Dashboard](https://github.com/Gyan3168/Product-Sales-Data-Analytics/assets/67944423/6fe3e270-0fe1-4df0-8125-c27156a54f6a)
-![Forecast Dashboard](https://github.com/Gyan3168/Product-Sales-Data-Analytics/assets/67944423/8d369313-fbae-4a85-a051-493a74e3861b)
+## Key takeaways
+- The West and East regions together account for roughly 62% of sales — a natural starting point for any region-targeted campaign
+- Standard Class shipping dominates order volume, which matters for warehouse/logistics planning
+- The daily sales series is highly volatile day-to-day but has a clear step-up in late 2020, which the forecast model had to account for rather than smoothing away
+
+## Files
+- `superstore_dashboard.pbix` — main dashboard
+- Screenshots included in this folder
